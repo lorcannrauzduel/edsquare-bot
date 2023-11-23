@@ -1,14 +1,14 @@
 {
-	"name": "update-planning",
+	"name": "edsquare-bot",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Ce bot permet de récupérer le planning de l'EDSQUARE et de l'envoyer sur un webhook discord",
 	"main": "index.js",
 	"scripts": {
 		"dev": "ts-node infrastructure/fastify/index.ts",
 		"test": "ts-mocha ./test/*.test.ts"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Lorcann RAUZDUEL",
 	"license": "ISC",
 	"dependencies": {
 		"chai": "^4.3.10",
