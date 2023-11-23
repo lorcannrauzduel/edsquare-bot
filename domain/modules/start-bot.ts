@@ -5,7 +5,7 @@ import { SchoolEvent } from '../interfaces/entities/school-event.entity';
 import { fetchPlanning } from './fetch-planning';
 
 export const startBot = async () => {
-	discordWebhook.send('Démarrage du bot');
+	// discordWebhook.send('Démarrage du bot');
 	const currentPlanning = await fetchPlanning(startDate, endDate);
 	if (!currentPlanning) {
 		return console.log('Aucun planning récupéré');
