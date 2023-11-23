@@ -9,7 +9,7 @@ const app = (0, fastify_1.fastify)();
 app.get('/', async (request, reply) => {
     return reply.send({ message: 'Le bot est en ligne' });
 });
-app.listen({ port: 3000 }, async (err, address) => {
+app.listen({ port: process.env.PORT || 3000 }, async (err, address) => {
     if (err) {
         console.error(err);
         process.exit(1);
