@@ -1,7 +1,7 @@
 import puppeteer, { PuppeteerLaunchOptions, Viewport } from 'puppeteer';
 
 export const initPuppeteer = async (
-	puppeteerConfig: PuppeteerLaunchOptions,
+	puppeteerConfig: any,
 	viewPortConfig: Viewport
 ) => {
 	const browser = await puppeteer.launch(puppeteerConfig);

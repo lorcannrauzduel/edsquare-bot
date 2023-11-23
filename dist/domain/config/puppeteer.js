@@ -4,7 +4,7 @@ exports.puppeteerConfig = void 0;
 exports.puppeteerConfig = {
     // options de lancement de puppeteer
     launch: {
-        headless: true,
+        headless: 'new',
         dumpio: true, // permet de voir les console.log dans le terminal
     },
     // la taille de la fenêtre du navigateur
