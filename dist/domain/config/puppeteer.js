@@ -4,7 +4,7 @@ exports.puppeteerConfig = void 0;
 exports.puppeteerConfig = {
     // options de lancement de puppeteer
     launch: {
-        ignoreDefaultArgs: ['--disable-extensions'],
+        ignoreDefaultArgs: ['--disable-extensions', '--no-sandbox'],
         headless: 'new',
         dumpio: true, // permet de voir les console.log dans le terminal
     },
