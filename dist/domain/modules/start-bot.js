@@ -2,11 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.startBot = void 0;
 const cache_1 = require("../config/cache");
-const discord_1 = require("../config/discord");
 const fetch_interval_1 = require("../config/fetch-interval");
 const fetch_planning_1 = require("./fetch-planning");
 const startBot = async () => {
-    discord_1.discordWebhook.send('Démarrage du bot');
+    // discordWebhook.send('Démarrage du bot');
     const currentPlanning = await (0, fetch_planning_1.fetchPlanning)(fetch_interval_1.startDate, fetch_interval_1.endDate);
     if (!currentPlanning) {
         return console.log('Aucun planning récupéré');
