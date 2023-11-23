@@ -1,6 +1,7 @@
 export const puppeteerConfig = {
 	// options de lancement de puppeteer
 	launch: {
+		ignoreDefaultArgs: ['--disable-extensions'],
 		headless: 'new', // false pour voir l'action dans le navigateur
 		dumpio: true, // permet de voir les console.log dans le terminal
 	},
