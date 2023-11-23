@@ -1,8 +1,8 @@
 import { MessageStrategy } from '../interfaces/strategies/message.strategy';
-import { DefaultStrategy } from './message/default.strategy';
+import { DefaultStrategy } from './message/default.message';
 import { RoomMessageStrategy } from './message/room.message';
 import { TeacherMessageStrategy } from './message/teacher.message';
-import { TimeMessageStrategy } from './message/time.strategy';
+import { TimeMessageStrategy } from './message/time.message';
 
 export const strategies: any = {
 	start: new TimeMessageStrategy(),
