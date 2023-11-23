@@ -4,7 +4,9 @@
 	"description": "Ce bot permet de récupérer le planning de l'EDSQUARE et de l'envoyer sur un webhook discord",
 	"main": "index.js",
 	"scripts": {
-		"start": "ts-node infrastructure/fastify/index.ts",
+		"build": "tsc",
+		"start": "node build/infrastructure/fastify/index.js",
+		"dev": "ts-node infrastructure/fastify/index.ts",
 		"test": "ts-mocha ./test/*.test.ts"
 	},
 	"keywords": [],
