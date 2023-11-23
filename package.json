@@ -1,0 +1,28 @@
+{
+	"name": "update-planning",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "ts-node infrastructure/fastify/index.ts",
+		"test": "ts-mocha ./test/*.test.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chai": "^4.3.10",
+		"discord-webhook-node": "^1.1.8",
+		"dotenv": "^16.3.1",
+		"fastify": "^4.24.3",
+		"lodash": "^4.17.21",
+		"mocha": "^10.2.0",
+		"node-cache": "^5.1.2",
+		"puppeteer": "^21.5.2"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.3.11",
+		"@types/lodash": "^4.14.202",
+		"@types/mocha": "^10.0.5"
+	}
+}
