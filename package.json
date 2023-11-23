@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "tsc",
-		"start": "node build/infrastructure/fastify/index.js",
+		"start": "node dist/infrastructure/fastify/index.js",
 		"dev": "ts-node infrastructure/fastify/index.ts",
 		"test": "ts-mocha ./test/*.test.ts"
 	},
