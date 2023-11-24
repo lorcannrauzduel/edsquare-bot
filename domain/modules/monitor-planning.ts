@@ -6,7 +6,7 @@ import { getStrategy } from '../strategies';
 import { fetchPlanning } from './fetch-planning';
 import { getChanges } from './get-changes';
 
-export const checkPlanning = async () => {
+export const monitorPlanning = async () => {
 	setInterval(async () => {
 		console.log('Vérifie le planning...');
 		const newPlanning = (await fetchPlanning(

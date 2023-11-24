@@ -2,7 +2,6 @@ import { expect } from 'chai';
 import { newData, oldData } from './mock/events';
 import { getChanges } from '../domain/modules/get-changes';
 import { getStrategy } from '../domain/strategies';
-import { endDate, startDate } from '../domain/config/fetch-interval';
 
 describe('Update planning', () => {
 	it('should check if propertis has changed', () => {

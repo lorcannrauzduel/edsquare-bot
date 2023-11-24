@@ -1,6 +1,5 @@
-import { checkPlanning } from '../../domain/modules/check-planning';
 import { fastify } from 'fastify';
-import { startBot } from '../../domain/modules/start-bot';
+import { startBot, monitorPlanning } from '../../domain';
 import { config } from 'dotenv';
 config();
 
@@ -19,6 +18,6 @@ app.listen(
 		}
 		console.log(`Server listening at ${address}`);
 		await startBot();
-		await checkPlanning();
+		await monitorPlanning();
 	}
 );
