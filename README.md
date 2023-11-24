@@ -53,7 +53,7 @@ yarn dev
 pnpm dev
 ```
 
-`- Pour exécuter les tests :`
+- Pour exécuter les tests :
 
 ```bash
 npm run test
