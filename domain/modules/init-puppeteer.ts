@@ -1,4 +1,4 @@
-import puppeteer, { PuppeteerLaunchOptions, Viewport } from 'puppeteer';
+import puppeteer, { Viewport } from 'puppeteer';
 
 export const initPuppeteer = async (
 	puppeteerConfig: any,

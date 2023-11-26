@@ -21,11 +21,13 @@
 		"mocha": "^10.2.0",
 		"node-cache": "^5.1.2",
 		"path": "^0.12.7",
-		"puppeteer": "^21.5.2"
+		"puppeteer": "^21.5.2",
+		"selenium-webdriver": "^4.15.0"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.3.11",
 		"@types/lodash": "^4.14.202",
-		"@types/mocha": "^10.0.5"
+		"@types/mocha": "^10.0.5",
+		"@types/selenium-webdriver": "^4.1.20"
 	}
 }

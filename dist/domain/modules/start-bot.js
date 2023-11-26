@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.startBot = void 0;
 const cache_1 = require("../config/cache");
+// import { discordWebhook } from '../config/discord';
 const fetch_interval_1 = require("../config/fetch-interval");
 const fetch_planning_1 = require("./fetch-planning");
 const startBot = async () => {

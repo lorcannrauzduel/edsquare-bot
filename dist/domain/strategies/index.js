@@ -12,6 +12,6 @@ exports.strategies = {
     teacher: new teacher_message_1.TeacherMessageStrategy(),
 };
 const getStrategy = (change) => {
-    return exports.strategies[change.key] || new default_message_1.DefaultStrategy();
+    return exports.strategies[change.key] || new default_message_1.DefaultMessageStrategy();
 };
 exports.getStrategy = getStrategy;

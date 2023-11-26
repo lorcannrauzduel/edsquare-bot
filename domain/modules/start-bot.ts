@@ -1,5 +1,5 @@
 import { cache } from '../config/cache';
-import { discordWebhook } from '../config/discord';
+// import { discordWebhook } from '../config/discord';
 import { endDate, startDate } from '../config/fetch-interval';
 import { SchoolEvent } from '../interfaces/entities/school-event.entity';
 import { fetchPlanning } from './fetch-planning';

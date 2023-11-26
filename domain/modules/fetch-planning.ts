@@ -1,4 +1,3 @@
-import puppeteer from 'puppeteer';
 import { acceptCookies } from './accept-cookies';
 import { connectToEdsquare } from './connect-to-edsquare';
 import { getEvents } from './get-events';

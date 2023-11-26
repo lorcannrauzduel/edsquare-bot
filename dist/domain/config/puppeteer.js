@@ -4,10 +4,16 @@ exports.puppeteerConfig = void 0;
 exports.puppeteerConfig = {
     // options de lancement de puppeteer
     launch: {
-        ignoreDefaultArgs: [
-            '--disable-extensions',
-            '--no-sandbox',
+        timeout: 20000,
+        ignoreHTTPSErrors: true,
+        slowMo: 0,
+        args: [
+            '--disable-gpu',
+            '--disable-dev-shm-usage',
             '--disable-setuid-sandbox',
+            '--no-first-run',
+            '--no-sandbox',
+            '--no-zygote',
         ],
         headless: 'new',
         dumpio: true, // permet de voir les console.log dans le terminal
