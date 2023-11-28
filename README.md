@@ -34,6 +34,7 @@ pnpm install
 ```bash
 EDSQUARE_EMAIL="votre_email@exemple.com"
 EDSQUARE_PASSWORD="votre_mot_de_passe"
+EDSQUARE_PLANNING_BASE_URI="apps/planning" ou "admin/apps/planning" si vous êtes admin
 WEBHOOK_URL="url_du_webhook_discord"
 ```
 
@@ -45,26 +46,10 @@ WEBHOOK_URL="url_du_webhook_discord"
 npm run dev
 ```
 
-```bash
-yarn dev
-```
-
-```bash
-pnpm dev
-```
-
 - Pour exécuter les tests :
 
 ```bash
 npm run test
-```
-
-```bash
-yarn test
-```
-
-```bash
-pnpm test
 ```
 
 ## Contribution

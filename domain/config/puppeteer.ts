@@ -12,7 +12,7 @@ export const puppeteerConfig = {
 			'--no-sandbox',
 			'--no-zygote',
 		],
-		headless: 'new', // false pour voir l'action dans le navigateur
+		headless: false, // false pour voir l'action dans le navigateur
 		dumpio: true, // permet de voir les console.log dans le terminal
 	},
 	// la taille de la fenêtre du navigateur
