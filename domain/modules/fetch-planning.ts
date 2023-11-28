@@ -20,11 +20,15 @@ export const fetchPlanning = async (
 		);
 		await page.goto('https://app.edsquare.fr/');
 		await acceptCookies(page);
-		await connectToEdsquare(
-			process.env.EDSQUARE_EMAIL,
-			process.env.EDSQUARE_PASSWORD,
-			page
-		);
+		try {
+			await connectToEdsquare(
+				process.env.EDSQUARE_EMAIL,
+				process.env.EDSQUARE_PASSWORD,
+				page
+			);
+		} catch (error) {
+			return console.log('Erreur lors de la connexion', { error });
+		}
 		const events = await getEvents(startDate, endDate, page);
 		return events;
 	} catch (error: unknown) {
