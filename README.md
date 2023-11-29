@@ -18,14 +18,6 @@ git clone git@github.com:lorcannrauzduel/edsquare-bot.git
 npm install
 ```
 
-```bash
-yarn
-```
-
-```bash
-pnpm install
-```
-
 ## Configuration
 
 1. Créez un fichier `.env` à la racine du projet.
@@ -34,7 +26,7 @@ pnpm install
 ```bash
 EDSQUARE_EMAIL="votre_email@exemple.com"
 EDSQUARE_PASSWORD="votre_mot_de_passe"
-EDSQUARE_PLANNING_BASE_URI="apps/planning" ou "admin/apps/planning" si vous êtes admin
+EDSQUARE_PLANNING_BASE_URI="apps/planning" ou "admin/apps/plannings" si vous êtes admin
 WEBHOOK_URL="url_du_webhook_discord"
 ```
 
