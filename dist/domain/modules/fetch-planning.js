@@ -14,7 +14,12 @@ const fetchPlanning = async (startDate, endDate) => {
         const page = await (0, init_puppeteer_1.initPuppeteer)(puppeteer_1.puppeteerConfig.launch, puppeteer_1.puppeteerConfig.viewport);
         await page.goto('https://app.edsquare.fr/');
         await (0, accept_cookies_1.acceptCookies)(page);
-        await (0, connect_to_edsquare_1.connectToEdsquare)(process.env.EDSQUARE_EMAIL, process.env.EDSQUARE_PASSWORD, page);
+        try {
+            await (0, connect_to_edsquare_1.connectToEdsquare)(process.env.EDSQUARE_EMAIL, process.env.EDSQUARE_PASSWORD, page);
+        }
+        catch (error) {
+            return console.log('Erreur lors de la connexion', { error });
+        }
         const events = await (0, get_events_1.getEvents)(startDate, endDate, page);
         return events;
     }

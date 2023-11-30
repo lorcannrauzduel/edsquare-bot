@@ -6,8 +6,8 @@ const getEvents = async (startDate, endDate, page) => {
     console.log(`Récupère les événements du ${startDate} au ${endDate}`);
     const formattedStartDate = (0, format_date_with_timezone_1.formatDateWithTimezone)(startDate);
     const formattedEndDate = (0, format_date_with_timezone_1.formatDateWithTimezone)(endDate);
-    const planningURL = `https://app.edsquare.fr/admin/apps/plannings/json?start=${formattedStartDate}&end=${formattedEndDate}`;
-    const planningSelector = 'a[href="/admin/apps/plannings"]';
+    const planningURL = `https://app.edsquare.fr/${process.env.EDSQUARE_PLANNING_BASE_URI}/json?start=${formattedStartDate}&end=${formattedEndDate}`;
+    const planningSelector = `a[href="/${process.env.EDSQUARE_PLANNING_BASE_URI}"]`;
     await page.waitForSelector(planningSelector);
     await page.goto(planningURL);
     await page.content();
