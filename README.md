@@ -49,7 +49,3 @@ npm run test
 Vos contributions sont les bienvenues. Que vous ayez des idées de nouvelles fonctionnalités, des corrections, ou des améliorations de code.
 
 Si vous avez des questions ou besoin d'aide, n'hésitez pas à ouvrir une issue !
-
-## Auteur
-
-Lorcann RAUZDUEL
